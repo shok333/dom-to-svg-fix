@@ -1,0 +1,145 @@
+{
+  "_args": [
+    [
+      "dom-to-svg@0.11.3",
+      "C:\\Users\\79063\\Documents\\client"
+    ]
+  ],
+  "_from": "dom-to-svg@0.11.3",
+  "_id": "dom-to-svg@0.11.3",
+  "_inBundle": false,
+  "_integrity": "sha512-HXzPD+WvSZ9awe/tEtKMUp2mQyGBdAtL6Ip+N0zZDXQtT1PkF3fQplu3M8dj4d5SMBrUsDLKuQtbeTBv7nSsNw==",
+  "_location": "/dom-to-svg",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "dom-to-svg@0.11.3",
+    "name": "dom-to-svg",
+    "escapedName": "dom-to-svg",
+    "rawSpec": "0.11.3",
+    "saveSpec": null,
+    "fetchSpec": "0.11.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/dom-to-svg/-/dom-to-svg-0.11.3.tgz",
+  "_spec": "0.11.3",
+  "_where": "C:\\Users\\79063\\Documents\\client",
+  "author": {
+    "name": "Felix Becker"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/felixfbecker/dom-to-svg/issues"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {
+    "gradient-parser": "^1.0.0",
+    "postcss-value-parser": "^4.1.0"
+  },
+  "description": "Take SVG screenshots of DOM elements",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@pollyjs/adapter-puppeteer": "^5.0.0",
+    "@pollyjs/core": "^5.0.0",
+    "@pollyjs/persister-fs": "^5.0.0",
+    "@sourcegraph/eslint-config": "^0.22.0",
+    "@sourcegraph/prettierrc": "^3.0.3",
+    "@types/chai": "^4.2.15",
+    "@types/content-type": "^1.1.3",
+    "@types/lodash": "^4.14.166",
+    "@types/mime-types": "^2.1.0",
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^14.14.17",
+    "@types/parcel-bundler": "^1.12.1",
+    "@types/pixelmatch": "^5.2.2",
+    "@types/pngjs": "^3.4.2",
+    "@types/pollyjs__adapter-puppeteer": "^4.0.1",
+    "@types/pollyjs__core": "^4.3.1",
+    "@types/pollyjs__persister-fs": "^2.0.1",
+    "@types/prettier": "^2.1.6",
+    "@types/puppeteer": "^5.4.2",
+    "@types/type-is": "^1.6.3",
+    "chai": "^4.3.0",
+    "chardet": "^1.3.0",
+    "content-type": "^1.0.4",
+    "delay": "^4.4.0",
+    "eslint": "^7.20.0",
+    "husky": "^4.3.0",
+    "iconv-lite": "^0.6.2",
+    "lodash": "^4.17.20",
+    "mime-types": "^2.1.27",
+    "mocha": "^8.2.1",
+    "parcel-bundler": "^1.12.4",
+    "pixelmatch": "^5.2.1",
+    "pngjs": "^6.0.0",
+    "prettier": "^2.2.1",
+    "puppeteer": "^5.5.0",
+    "rxjs": "^6.6.3",
+    "semantic-release": "^17.2.4",
+    "source-map-support": "^0.5.19",
+    "tagged-template-noop": "^2.1.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.3",
+    "xml-formatter": "^2.4.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/felixfbecker/dom-to-svg#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "svg",
+    "dom",
+    "screenshot",
+    "snapshot",
+    "document",
+    "element",
+    "image"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "mocha": {
+    "timeout": 150000,
+    "exit": true,
+    "enableSourceMaps": true,
+    "watchFiles": [
+      "lib/**/*.js"
+    ]
+  },
+  "name": "dom-to-svg",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixfbecker/dom-to-svg.git"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "eslint": "eslint 'src/**/*.ts'",
+    "get-fixture": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/test/get-fixture.ts",
+    "prettier": "prettier --check '**/*.{yml,ts,json}'",
+    "semantic-release": "semantic-release",
+    "test": "mocha --require source-map-support/register lib/test/test.js",
+    "watch": "tsc -p . -w"
+  },
+  "sideEffects": false,
+  "version": "0.11.3"
+}
